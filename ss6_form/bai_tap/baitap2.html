@@ -2,9 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>DangKy</title>
+    <style>
+        div{
+            background-color: khaki;
+        }
+        h2{
+            background-color: aquamarine;
+            color: blue;
+        }
+        .tieude{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="sheet">
+    <h2 class="dangky">ĐĂNG KÝ HỌC VIÊN</h2>
+    <form action="">
+        <table>
+            <tr>
+                <td class="tieude">Họ và Tên</td>
+                <td>
+                    <input type="text" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td class="tieude">Ngày Sinh</td>
+                <td>
+                    <input type="text" size="15">
+                </td>
+            </tr>
+            <tr>
+                <td class="tieude">Giới Tính</td>
+                <td>
+                    <input type="radio" name="sex">Nam
+                    <input type="radio" name="sex">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="tieude">Địa chỉ</td>
+                <td>
+                    <textarea name="adress" rows="5" cols="25"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="tieude">Lớp</td>
+                <td>
+                    <select>
+                        <option>--Chọn lớp--</option>
+                        <option>A022I1</option>
+                        <option>A022I2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tieude">Email</td>
+                <td>
+                    <input type="text" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td class="tieude">Điện Thoại</td>
+                <td>
+                    <input type="text" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng Ký">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
 </body>
 </html>
