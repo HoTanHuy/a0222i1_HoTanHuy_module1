@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let p = parseInt(prompt("nhạp thời gian:"))
+    if ( p<= 50) {
+        cuoc= 25000+600*p;
+        document.write(cuoc)
+    } else if ( p<= 200) {
+        cuoc= 25000+30000+400*p;
+        document.write(cuoc)
+    } else {
+        cuoc= 25000+30000+60000+200*p;
+        document.write(cuoc)
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1= parseInt(prompt("Input array1:"));
+    let myarr1 = new Array(array1);
+    for (let i=0; i< myarr1.length ;i++){
+        let value1= parseInt(prompt("input ["+i+"]:"));
+        myarr1[i]= value1;
+    }
+    let array2= parseInt(prompt("Input array2:"));
+    let myarr2 = new Array(array2);
+    for (let i=0; i< myarr2.length ;i++){
+        let value2= parseInt(prompt("input ["+i+"]:"));
+        myarr2[i]= value2;
+    }
+    let myarr3 = myarr1.concat(myarr2);
+    document.write(myarr3)
+</script>
+</body>
+</html>

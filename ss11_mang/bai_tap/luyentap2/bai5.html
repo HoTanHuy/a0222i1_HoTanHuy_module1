@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1= parseInt(prompt("Input array1:"));
+    let myarr1 = new Array(array1);
+    let flg =false ;
+    for (let i=0; i< myarr1.length ;i++){
+        let value1= prompt("input ["+i+"]:");
+        myarr1[i]= value1;
+    }
+    let array2= parseInt(prompt("Input array2:"));
+    let myarr2 = new Array(array2);
+    for (let i=0; i< myarr2.length ;i++){
+        let value2= prompt("input ["+i+"]:");
+        myarr2[i]= value2;
+    }
+    document.write(myarr1+"<br>");
+    document.write(myarr2+"<br>");
+
+    if (myarr1.length==myarr2.length){
+        for (let i=0; i< myarr1.length; i++){
+            if (myarr1[i]==myarr2[i]){
+                flg = true
+            }else {
+                flg = false;
+                break
+            }
+        }
+        if (flg==false){
+            document.write("không giống nhau")
+        } else {
+            document.write("giống nhau")
+        }
+    } else {
+        document.write("không giống nhau")
+    }
+
+</script>
+</body>
+</html>

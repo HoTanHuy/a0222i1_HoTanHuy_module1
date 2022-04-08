@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label for="inputEng">Input:</label>
+<input id="inputEng" type="text">
+<button onclick="searchVN()">Search</button>
+<p id="result"></p>
+<body>
+<script>
+    let arrEng = ["people","hello","map"];
+    let arVN = ["con người", "xin chào", "bản đồ"];
+
+    function searchVN() {
+        let result = "";
+
+        let keyWord = document.getElementById("inputEng").value;
+
+        let index = arrEng.indexOf(keyWord);
+        if(index != -1){
+            result = arVN[index];
+        } else {
+            result = "Not found...."
+        }
+
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

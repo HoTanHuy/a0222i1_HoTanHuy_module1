@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array= parseInt(prompt("Input array:"));
+    let myarr = new Array(array);
+    for (let i=0; i< myarr.length ;i++){
+        let value= parseInt(prompt("input ["+i+"]:"));
+        myarr[i]= value;
+    }
+    let inputV = parseInt(prompt("input V:"));
+
+    let flg = false;
+    for (let i = 0; i < myarr.length; i++) {
+        if (inputV == myarr[i]) {
+            myarr.splice(i,1);
+            myarr.push(0);
+            document.write(myarr);
+            flg = true;
+            break;
+        }
+    }
+    if (!flg) {
+        document.write("V is NOT in the array");
+    }
+</script>
+</body>
+</html>

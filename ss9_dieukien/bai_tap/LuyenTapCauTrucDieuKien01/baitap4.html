@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseInt(prompt("Nhập a:"));
+    let b = parseInt(prompt("Nhập b:"));
+    let c = parseInt(prompt("Nhập c:"));
+    Max = a ;
+    if(b>Max){
+        Max = b
+        if(c>Max){
+            Max =c
+        }
+    }
+    document.write("Số Lớn Nhất là :"+ Max)
+</script>
 </body>
 </html>

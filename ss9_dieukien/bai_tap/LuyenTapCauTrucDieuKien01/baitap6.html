@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let doanhSo = parseInt(prompt("Nhập doanh số:"));
+    if (doanhSo<=500){
+        hoaHong = 5/100*doanhSo;
+        document.write(hoaHong)
+    } else if (doanhSo<=1000){
+        hoaHong = 10/100*doanhSo;
+        document.write(hoaHong)
+    } else if (doanhSo<=1500) {
+        hoaHong = 15/100*doanhSo;
+        document.write(hoaHong)
+    }else {
+        hoaHong = 20/100*doanhSo;
+        document.write(hoaHong)
+    }
+</script>
 </body>
 </html>

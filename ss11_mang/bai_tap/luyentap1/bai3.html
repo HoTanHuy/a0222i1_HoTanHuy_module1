@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array= parseInt(prompt("Input array:"));
+    let myarr = new Array(array);
+    let max =0;
+    let tong =0;
+    for (let i=0; i< myarr.length ;i++){
+        let value= parseInt(prompt("input ["+i+"]:"));
+        myarr[i]= value;
+        tong = tong + myarr[i];
+        if (max<= myarr[i]){
+            max=myarr[i];
+        }
+    }
+    TBC = tong / myarr.length;
+    document.write("số lớn nhất trong mảng là : "+max +" TBC = "+ TBC)
+</script>
+</body>
+</html>

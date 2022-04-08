@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1= parseInt(prompt("Input array1:"));
+    let myarr1 = new Array(array1);
+    for (let i=0; i< myarr1.length ;i++){
+        let value1= prompt("input ["+i+"]:");
+        myarr1[i]= value1;
+        if (myarr1[i]=="-"){
+            myarr1[i]= "_"
+        }
+    }
+    document.write(myarr1)
+
+</script>
+</body>
+</html>

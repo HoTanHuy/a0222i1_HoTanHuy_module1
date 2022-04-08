@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array= parseInt(prompt("Input array:"));
+    let myarr = new Array(array);
+    for (let i=0; i< myarr.length ;i++){
+        let value= prompt("input ["+i+"]:");
+        myarr[i]= value;
+        if (myarr[i]>=10){
+            document.write("Số lớn hơn hoặc bằng 10: "+myarr[i]+"<br>")
+        }
+    }
+</script>
+</body>
+</html>

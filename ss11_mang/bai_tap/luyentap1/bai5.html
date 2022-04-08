@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập chuỗi: ");
+    let array = str.split('');
+    let countNA =0;
+    let countPA=0
+    for (let i=0; i < array.length;i++){
+        if (array[i]=="a"||array[i]=="e"||array[i]=="o"||array[i]=="u"||array[i]=="i"||array[i]=="ă"||
+            array[i]=="â"||array[i]=="ê"||array[i]=="ô"||array[i]=="ơ"||array[i]=="ư"||array[i]=="y"||
+            array[i]=="A"||array[i]=="E"||array[i]=="O"||array[i]=="U"||array[i]=="I"||array[i]=="Ă"||
+            array[i]=="Â"||array[i]=="Ê"||array[i]=="Ô"||array[i]=="Ơ"||array[i]=="Ư"||array[i]=="Y")
+        {
+            countNA++;
+        } else if(array[i]!=" ")
+        {
+            countPA++;
+        }
+    }
+    document.write("Số nguyên âm trong chuỗi là : "+countNA+"<br>");
+    document.write("Số phụ âm trong chuỗi là : "+countPA);
+
+</script>
+</body>
+</html>

@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = parseInt(prompt("Nhập số lượng:"));
+    let n1 =0 , n2 =1 ,n3;
+    document.write(number + " số trong dãy fibonaci đầu tiên là :"+"<br>");
+    for(let i =1; i<= number;i++){
+            document.write(n1+"<br>")
+            n3 = n1+n2 ;
+            n1=n2;
+            n2 = n3;
+    }
+</script>
 </body>
 </html>

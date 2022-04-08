@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseFloat(prompt("Điểm Kiểm Tra:"));
+    let b = parseFloat(prompt("Điểm giữa kì:"));
+    let c = parseFloat(prompt("Điểm cuối Kỳ:"));
+    dtb = (a+b*2+c*3)/6
+    if (dtb >= 8.5){
+        document.write("Loại A")
+    } else if(dtb >= 6.5){
+        document.write("Loại B")
+    }else if(dtb >= 5){
+        document.write("Loại C")
+    }else if(dtb >= 3.5){
+        document.write("Loại D")
+    }else {
+        document.write("Loại F")
+    }
+
+</script>
 </body>
 </html>

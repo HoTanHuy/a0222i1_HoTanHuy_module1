@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array= parseInt(prompt("Input array:"));
+    let myarr = new Array(array);
+    let max =0;
+    let max_index=0;
+    for (let i=0; i< myarr.length ;i++){
+        let value= parseInt(prompt("input ["+i+"]:"));
+        myarr[i]= value;
+        if (max<= myarr[i]){
+            max=myarr[i];
+            max_index= i;
+        }
+    }
+    document.write("số lớn nhất trong mảng là : "+max +" ở vị trí : "+max_index)
+</script>
+</body>
+</html>
