@@ -24,10 +24,59 @@ function GT(a) {
 }
 function KTKT(n) {
     let flg = false;
-    if ( !isNaN(n)){
+    if (! isNaN(n)){
         flg = true;
         document.write(flg)
     }else {
         document.writeln(flg)
     }
+}
+function checkMin(a,b,c) {
+    let min = a ;
+    if(b<min){
+        min = b
+        if(c<min){
+            min =c
+        }
+    }
+    return min
+}
+function checkNum(x) {
+    if (x>0){
+        return true;
+    }else {
+        return false;
+    }
+}
+function displaceNum(a,b) {
+    let c = 0;
+    c = a ;
+    a = b ;
+    b = c ;
+    document.write("Sau khi hoán đổi thì x = " + a + " y = "+b);
+}
+function arr() {
+    let array= parseInt(prompt("Input array:"));
+    let myarr = new Array(array);
+    for (let i=0; i< myarr.length ;i++){
+        let value= prompt("input ["+i+"]:");
+        myarr[i]= value;}
+    myarr.reverse();
+    document.write(myarr)
+}
+function arr1(character) {
+    let array= parseInt(prompt("Input array:"));
+    let myarr = new Array(array);
+    let coutn = 0 ;
+    for (let i=0; i< myarr.length ;i++){
+        let value= prompt("input ["+i+"]:");
+        myarr[i]= value;
+        if (myarr[i] == character){
+            ++coutn;
+        }
+    }
+    if(coutn==0){
+        coutn = -1;
+    }
+    return coutn;
 }
