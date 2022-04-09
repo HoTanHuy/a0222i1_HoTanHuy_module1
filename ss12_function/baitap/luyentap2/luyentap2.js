@@ -1,12 +1,15 @@
+//bài 1
 function x2(x) {
     return x*x ;
 }
+//bài 2
 function DT(bc) {
     return bc*bc*3.14;
 }
 function CV(bc2) {
     return bc2*2*3.14;
 }
+//bài 3
 function GT(a) {
 
     if (a==0 || a==1){
@@ -22,15 +25,20 @@ function GT(a) {
     }
 
 }
+//bài 4
 function KTKT(n) {
     let flg = false;
-    if (! isNaN(n)){
+    if(n=="" || n==" "){
+        alert("chưa nhập!!")
+    }else if (! isNaN(n)){
         flg = true;
         document.write(flg)
     }else {
-        document.writeln(flg)
+        document.write(flg)
     }
 }
+//bài 5
+//Cách 1
 function checkMin(a,b,c) {
     let min = a ;
     if(b<min){
@@ -41,6 +49,20 @@ function checkMin(a,b,c) {
     }
     return min
 }
+//Cách 2
+function minArray(arr) {
+    if(arr.length == 0)
+        return -1;
+    let min = arr[0];
+
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+//bài 6
 function checkNum(x) {
     if (x>0){
         return true;
@@ -48,6 +70,7 @@ function checkNum(x) {
         return false;
     }
 }
+//bài 7
 function displaceNum(a,b) {
     let c = 0;
     c = a ;
@@ -55,6 +78,7 @@ function displaceNum(a,b) {
     b = c ;
     document.write("Sau khi hoán đổi thì x = " + a + " y = "+b);
 }
+//bài 8
 function arr() {
     let array= parseInt(prompt("Input array:"));
     let myarr = new Array(array);
@@ -64,6 +88,7 @@ function arr() {
     myarr.reverse();
     document.write(myarr)
 }
+//bài 9
 function arr1(character) {
     let array= parseInt(prompt("Input array:"));
     let myarr = new Array(array);
