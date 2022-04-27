@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let num = prompt("Input number: ");
+    let arr = num.split('');
+    for (let i=0;i<arr.length;i++){
+        if (arr[i]==1) {
+            arr[i] = 'Một';
+        }else if (arr[i]==2){
+            arr[i]= 'Hai';
+        }else if (arr[i]==3){
+            arr[i]= 'Ba';
+        }else if (arr[i]==4){
+            arr[i]= 'Bốn';
+        }else if (arr[i]==5){
+            arr[i]= 'Năm';
+        }else if (arr[i]==6){
+            arr[i]= 'Sáu';
+        }else if (arr[i]==7){
+            arr[i]= 'Bảy';
+        }else if (arr[i]==8){
+            arr[i]= 'Tám';
+        }else if (arr[i]==9){
+            arr[i]= 'Chín';
+        }else if (arr[i]==0){
+            arr[i]= 'Không';
+        }
+    }
+    document.write(arr);
+</script>
 </body>
 </html>

@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let array1= parseInt(prompt("Input array Numerators and Denominators: "));
+    let a = new Array(array1);
+    let b = new Array(array1);
+    for (let i=0; i< a.length ;i++){
+        let value1= parseInt(prompt("input Numerators["+i+"]:"));
+        a[i]= value1;
+    }
+    document.write("Numerators["+a+"]"+"<br>");
+    for (let i=0; i< b.length ;i++){
+        let value2= parseInt(prompt("input Denominators["+i+"]:"));
+        b[i]= value2;
+    }
+    document.write("Denominators["+b+"]"+'<br>');
+    let NumMax = a[0]/b[0];
+    let iMax = 0;
+    for (let i=0; i< a.length ;i++){
+        if (NumMax<=(a[i]/b[i])){
+            NumMax = a[i]/b[i];
+            iMax = i;
+        }
+    }
+    document.write("Phân số lớn nhất là: "+a[iMax]+'/'+b[iMax]+'<br>');
+    document.write("Có chỉ số: "+iMax);
+
+</script>
 </body>
 </html>

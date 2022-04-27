@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let m = parseInt(prompt("input m:"));
+    let n = parseInt(prompt("input n:"));
+
+    let myArr2d = new Array(m);
+    for(let i = 0; i < myArr2d.length; i++){
+        myArr2d[i] = Array(n);
+
+        for(let j = 0; j< myArr2d[i].length; j++){
+            let value = parseInt(prompt("input ["+i+"]["+j+"]"));
+            myArr2d[i][j] = value;
+        }
+    }
+
+    let max =myArr2d[0][0];
+    let min = myArr2d[0][0];
+    for(let i = 0; i < myArr2d.length; i++){
+        for (let j = 0; j < myArr2d[i].length; j++){
+            if (myArr2d[i][j]>max){
+                max =myArr2d[i][j];
+            }
+            if (myArr2d[i][j]<min){
+                min =myArr2d[i][j];
+            }
+        }
+    }
+    document.write("Max = "+max+'<br>'+'Min = '+min)
+</script>
 </body>
 </html>

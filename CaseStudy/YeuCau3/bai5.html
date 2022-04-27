@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let bill = 0;
+    do {
+        let order = parseInt(prompt('1.Cafe (10000đ)\n' +
+        '2.Cam vắt (20000đ)\n' +
+        '3.Nước ép cà rốt (20000đ)\n' +
+        '4.Nước ép cà chua (20000đ)\n' +
+        '5.Nước lọc (5000đ)\n' +
+        '6.Nước dừa (15000đ)\n'+
+        '7.Tính tiền \n'));
+        if (order==1){
+          let quantity = parseInt(prompt("số lượng: "));
+          let sum1 = quantity * 10000;
+          bill+=sum1;
+        } else if (order==2){
+            let quantity = parseInt(prompt("số lượng: "));
+            let sum2 = quantity * 20000;
+            bill+=sum2;
+        } else if (order==3){
+            let quantity = parseInt(prompt("số lượng: "));
+            let sum3 = quantity * 20000;
+            bill+=sum3;
+        } else if (order==4){
+            let quantity = parseInt(prompt("số lượng: "));
+            let sum4 = quantity * 20000;
+            bill+=sum4;
+        } else if (order==5){
+            let quantity = parseInt(prompt("số lượng: "));
+            let sum5 = quantity * 5000;
+            bill+=sum5;
+        } else if (order==6){
+            let quantity = parseInt(prompt("số lượng: "));
+            let sum6 = quantity * 15000;
+            bill+=sum6;
+        } else if (order==7){
+            alert(" tổng tiền: "+bill+'đ');
+            break;
+        }
+    } while (true)
+</script>
 </body>
 </html>

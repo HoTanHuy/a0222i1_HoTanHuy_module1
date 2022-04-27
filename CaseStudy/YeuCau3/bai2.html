@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let array1= parseInt(prompt("Input array A:"));
+    let a = new Array(array1);
+    let array2= parseInt(prompt("Input array B:"));
+    let b = new Array(array2);
+    let ValueAB = []
+    for (let i=0; i< a.length ;i++){
+        let value1= parseInt(prompt("input A["+i+"]:"));
+        a[i]= value1;
+    }
+    document.write("A["+a+"]"+"<br>");
+    for (let i=0; i< b.length ;i++){
+        let value2= parseInt(prompt("input B["+i+"]:"));
+        b[i]= value2;
+    }
+    document.write("B["+b+"]"+'<br>');
+    for(let i=0; i<a.length;i++){
+        for (let j=0; j<b.length;j++){
+            if (a[i]==b[j]){
+              b.splice(j,1);
+            }
+        }
+    }
+    ValueAB = b;
+    document.write("missingValue(A, B) = ["+ValueAB+']')
+</script>
 </body>
 </html>

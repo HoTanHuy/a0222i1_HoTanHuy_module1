@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <script src="YeuCau5.js"></script>
 </head>
 <body>
-$END$
+<script>
+    let m = parseInt(prompt("input m:"));
+    let n = parseInt(prompt("input n:"));
+
+    let myArr2d = new Array(m);
+    for(let i = 0; i < myArr2d.length; i++){
+        myArr2d[i] = Array(n);
+
+        for(let j = 0; j< myArr2d[i].length; j++){
+            let value = parseInt(prompt("input ["+i+"]["+j+"]"));
+            myArr2d[i][j] = value;
+        }
+    }
+
+    let count =0;
+    for(let i = 0; i < myArr2d.length; i++){
+        for (let j = 0; j < myArr2d[i].length; j++){
+            let fl = SNT(myArr2d[i][j]);
+            if (fl==true){
+                count++;
+                document.write(myArr2d[i][j]+" là SNT"+'<br>')
+            }else {
+                document.write(myArr2d[i][j]+" ko phải là SNT"+'<br>')
+            }
+        }
+    }
+    document.write("Tổng SNT trong mảng là : "+count)
+</script>
 </body>
 </html>

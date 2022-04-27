@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let Kt = prompt("InPut");
+    let arr = Kt.split('');
+    let count =0;
+    //a,a,c,c,b,b
+    for (let i =0;i<arr.length;i++){
+        let kt = true;
+        for (let j=0;j<i;j++){
+            if (arr[i]==arr[j]){
+                kt = false;
+                break;
+            }
+        }
+        if (kt==true){
+            count++;
+            document.write(arr[i]+'<br>')
+        }
+    }
+    alert("NumKT: "+count)
+</script>
 </body>
 </html>

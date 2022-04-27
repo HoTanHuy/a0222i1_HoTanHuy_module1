@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let x=  parseInt(prompt("Input x:"));
+    let y= parseInt(prompt("Input y:"));
+    for(let  n=1;n<=x;n++){
+        for(let m=1;m<=y;m++){
+            if(n==1||m==1||n==x||m==y){
+                document.write('*')
+            }else {
+                document.write("&nbsp;"+"&nbsp;")
+            }
+        }
+        document.write('<br>')
+    }
+</script>
 </body>
 </html>

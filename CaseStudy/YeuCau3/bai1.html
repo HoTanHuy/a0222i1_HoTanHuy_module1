@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let array= parseInt(prompt("Input array:"));
+    let a = new Array(array);
+    let b = [];
+    for (let i=0; i< a.length ;i++){
+        let value= parseInt(prompt("input ["+i+"]:"));
+        a[i]= value;
+    }
+    b[0]= a[0];
+    //let tong = a[0];
+    for (let i=1; i< a.length ;i++){
+        //tong+=a[i];
+        //b[i] = tong;
+        b[i]=b[i-1]+a[i];
+    }
+    document.write(b);
+</script>
 </body>
 </html>

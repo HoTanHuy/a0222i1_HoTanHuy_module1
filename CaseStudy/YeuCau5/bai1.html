@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let m = parseInt(prompt("input m:"));
+    let n = parseInt(prompt("input n:"));
+
+    let myArr2d = new Array(m);
+    for(let i = 0; i < myArr2d.length; i++){
+        myArr2d[i] = Array(n);
+
+        for(let j = 0; j< myArr2d[i].length; j++){
+            let value = parseInt(prompt("input ["+i+"]["+j+"]"));
+            myArr2d[i][j] = value;
+        }
+    }
+
+    let sum =0;
+    for(let i = 0; i < myArr2d.length; i++){
+        for (let j = 0; j < myArr2d[i].length; j++){
+            if (myArr2d[i][j]%2==0){
+                sum+=myArr2d[i][j];
+            }
+        }
+    }
+    document.write("sum ="+sum)
+</script>
 </body>
 </html>
